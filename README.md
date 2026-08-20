@@ -1,3 +1,5 @@
-#Web based ASCII webcam website
+# Web based ASCII webcam website
 
-It is a **web-based ASCII webcam project** that turns a live camera feed into colorful ASCII art. It uses HTML for the page structure, CSS for the visual design and RGB layers, and JavaScript to capture the webcam, process its pixels, and convert them into ASCII characters in real time.
+It is a **web-based ASCII webcam project** that transforms a live webcam feed into colorful ASCII art in real time. The project uses **HTML** to create the structure of the webpage, **CSS** to handle the visual design, layout, colors, and RGB effects, and **JavaScript** to access the webcam, process the incoming video frames, analyze individual pixels, and convert them into ASCII characters.
+
+The result is an interactive webcam experience where the live camera feed is represented entirely through dynamically generated text characters. The project runs directly in the browser, making it lightweight, interactive, and easy to use without requiring additional software or installations.
