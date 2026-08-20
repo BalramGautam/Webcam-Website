@@ -1,0 +1,90 @@
+#ascii-cam pre,
+body,
+html {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    background-color: #000;
+    color: #eee;
+    font-family: monospace;
+}
+
+#logo,
+#enable-cam-msg {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+.fade {
+    transition: opacity 0.25s ease-in-out;
+}
+
+#logo {
+    line-height: 1.5;
+}
+
+#ascii-cam {
+    opacity: 0;
+}
+
+#ascii-cam pre {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    line-height: 0.6;
+    user-select: none;
+    mix-blend-mode: screen;
+    font-size: 2vh;
+}
+
+@media (max-height: 50em) {
+    #ascii-cam pre {
+        font-size: 1em;
+    }
+}
+
+@media (min-height: 60em) {
+    #ascii-cam pre {
+        font-size: 1.2em;
+    }
+}
+
+#ascii-cam #r-output {
+    color: red;
+}
+
+#ascii-cam #g-output {
+    color: #0f0;
+}
+
+#ascii-cam #b-output {
+    color: #00f;
+}
+
+#enable-cam-msg {
+    opacity: 0;
+    font-size: 3rem;
+    background-color: white;
+    color: black;
+    margin: 0;
+    max-width: 50vw;
+    white-space: pre-line;
+    text-align: center;
+    font-weight: 900;
+}
+
+#canvas,
+#video {
+    display: none;
+}
